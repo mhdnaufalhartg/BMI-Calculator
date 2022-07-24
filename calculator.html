@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        color: blueviolet;
+        margin-top: 25px;
+        text-align: center;
+      }
+      .form {
+        width: 30%;
+        background-color: rgb(42, 42, 42);
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      label {
+        color: blueviolet;
+      }
+      div {
+        margin: 12px;
+      }
+      input {
+        border: 0;
+        border-radius: 5px;
+        outline: 1px solid blueviolet;
+        background-color: rgb(211, 211, 252);
+        height: 25px;
+        width: 170px;
+      }
+      .btn {
+        display: flex;
+        justify-content: space-between;
+      }
+      button {
+        padding: 5px 15px;
+        border-radius: 5px;
+        border: 0;
+        margin-top: 7px;
+        color: blueviolet;
+      }
+
+      a {
+        color: blueviolet;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="judul">BMI Calculator</h1>
+    <form
+      action="/BMIcalculator-result"
+      method="POST"
+      autocomplete="none"
+      class="form"
+    >
+      <div>
+        <label for="berat">Input Your Weight :</label>
+        <input
+          type="text"
+          name="berat"
+          id="berat"
+          placeholder="input your weight...kg"
+        />
+      </div>
+      <div>
+        <label for="tinggi">Input Your Height :</label>
+        <input
+          type="text"
+          name="tinggi"
+          id="tinggi"
+          autofocus
+          placeholder="input your height...m"
+        />
+      </div>
+      <div class="btn">
+        <button type="button" class="button">
+          <a href="/">Back</a>
+        </button>
+        <button type="submit" name="submit" class="button">
+          Calculate BMI
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
